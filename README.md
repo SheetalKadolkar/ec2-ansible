@@ -4,7 +4,7 @@ This repository contains Terraform configuration to automatically provision an A
 
 ## Architecture
 
-- **Ansible Server**: t3.medium instance running Amazon Linux 2023
+- **Ansible Server**: c7i-flex.large instance running Amazon Linux 2023
 - **Host Machines**: 2 x t3.micro instances running Amazon Linux 2023
 - **Networking**: Custom VPC with public subnet and Internet Gateway
 - **Security**: Separate security groups for server and hosts

@@ -191,7 +191,7 @@ data "aws_availability_zones" "available" {
 # Ansible Server (Control Node)
 resource "aws_instance" "ansible_server" {
   ami                    = local.ami_id
-  instance_type          = "t3.medium"
+  instance_type          = "c7i-flex.large"
   key_name               = local.key_pair_name
   vpc_security_group_ids = [aws_security_group.ansible_server_sg.id]
   subnet_id              = aws_subnet.ansible_public_subnet.id
